@@ -8,7 +8,22 @@
 .close-mobile-nav {
 	display: flex;
 	flex-direction: row-reverse;
+	align-items: center
 }
+
+.back-to-top {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+	.back-to-top {
+		display: none;
+	}
+}
+
+
 
 
 
