@@ -4,42 +4,11 @@
 
 html {
 	font-family: 'Arial';
-	color: white;
+	color: white;	
 }
 
-.mobile-nav {
-	background-color: darkred;
-	font-weight: 700;
-}
-
-.site-header {
-	display: grid;
-	grid-template-columns: 1fr 400px 1fr;	
-	background-color: red;
-	font-weight: 700;
-	width: 100%;
-}
-
-.hero {
-	background-image: url(http://via.placeholder.com/1500x800);
-	background-position: center;
-	background-size: cover;
-}
-
-.portfolio-wrap {	
-	max-width: 1200px;
-	margin-left: 2%;
-	margin-right:2%;
-}
-
-.portfolio-content {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-}
-
-.portfolio-image {
-	width: 100%;
-    height: auto;
+a {
+	text-decoration: none;
 }
 
 h1 { font-size: 2em; }
@@ -48,6 +17,83 @@ h3 { font-size: 1.17em; }
 h4 { font-size: 1.12em; }
 h5 { font-size: .83em; }
 h6 { font-size: .75em; }
+
+
+.mobile-header {
+	/*display: grid;*/
+	grid-template-columns: 1fr 1fr 1fr;
+	height: 70px;
+	line-height: 70px;
+	background-color: darkred;
+	font-weight: 700;
+	width: 100%;
+	z-index: 2;
+	display: none;
+}
+
+.close-mobile-nav {
+	padding-right: 20px;
+}
+
+.site-header {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	height: 70px;
+	line-height: 70px;	
+	background-color: red;
+	font-weight: 700;
+	width: 100%;
+	z-index: 2
+}
+
+.social-links {
+	padding-left: 10px;
+	padding-right: 40px;
+}
+
+.nav {
+	padding-left: 40px;
+	padding-right: 60px;
+}
+
+.hero {
+	background-image: url(http://via.placeholder.com/1500x800);
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	text-align: center;
+	line-height: 100vh;
+}
+
+.portfolio-wrap {	
+	max-width: 1200px;
+	margin-left: 2%;
+	margin-right:2%;
+
+}
+
+.portfolio-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;	
+}
+
+.portfolio-image {
+	width: 99%;
+    height: auto;	
+}
+
+.back-to-top {
+	width: 60px;
+	height: 60px;
+	background-color: gray;
+	opacity: 50%;	
+}
+
+footer, .back-to-top {
+	color: gray;
+
+}
+
 
 @media only screen and (max-width: 540px) {
 	.portfolio-wrap {
@@ -60,10 +106,23 @@ h6 { font-size: .75em; }
 }
 
 @media only screen and (max-width: 768px) {
+	
+	.site-header {
+		display: none;
+	}
+
+	.mobile-header {
+		display: grid;
+	}
+
 	.portfolio-wrap {
 		margin: 0px;
 	}
 	.portfolio-content {	
 		grid-template-columns: 1fr 1fr;		
+	}
+
+	footer, .back-to-top {
+		display: none;
 	}
 }

@@ -1,4 +1,14 @@
-.nav, .social-links {
+
+.nav, .social-links, .logo, .mobile-logo {
 	display: flex;
-	flex-direction: row;
+	justify-content: space-around;
+	flex-direction: row;	
 }
+
+.close-mobile-nav {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+
+
