@@ -1,0 +1,4 @@
+.nav, .social-links {
+	display: flex;
+	flex-direction: row;
+}

@@ -1,35 +1,69 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Arial';
+	color: white;
+}
+
+.mobile-nav {
+	background-color: darkred;
+	font-weight: 700;
+}
 
 .site-header {
-	height: 70px;
-	background-color: blue;
-	position: fixed;
+	display: grid;
+	grid-template-columns: 1fr 400px 1fr;	
+	background-color: red;
+	font-weight: 700;
+	width: 100%;
 }
 
 .hero {
-	position: fixed;
-
+	background-image: url(http://via.placeholder.com/1500x800);
+	background-position: center;
+	background-size: cover;
 }
 
-.content {
+.portfolio-wrap {	
 	max-width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.content {
 	margin-left: 2%;
 	margin-right:2%;
-	width: 96%;
 }
 
-.back-to-top {
-	position: fixed;
+.portfolio-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
+
+.portfolio-image {
+	width: 100%;
+    height: auto;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
 
 @media only screen and (max-width: 540px) {
-    
+	.portfolio-wrap {
+		margin: 0px;
+	}
+    .portfolio-content {	
+		display: flex;
+		flex-direction: column;		
+	}
 }
 
 @media only screen and (max-width: 768px) {
-    
+	.portfolio-wrap {
+		margin: 0px;
+	}
+	.portfolio-content {	
+		grid-template-columns: 1fr 1fr;		
+	}
 }
