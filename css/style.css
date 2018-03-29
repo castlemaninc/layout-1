@@ -75,12 +75,17 @@ h6 { font-size: .75em; }
 	height: 100vh;	
 }
 
-.hero-text {
+.hero-text-wrapper {
 	position: fixed;
-	margin-top: calc(.45 * (100vh));
-	color: black;
+	margin-top: calc(.30 * (100vh));
 	width: 100%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.hero-text {		
 	text-align: center;
+	font-weight: 700;
 }
 
 .portfolio-wrap {	
