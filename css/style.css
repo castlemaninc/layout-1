@@ -22,16 +22,8 @@ h6 { font-size: .75em; }
 	position: relative;
 }
 
-.responsive-social-links {
-	width: 100%;
-	padding-left: 40px;
-	padding-right: 40px;
-}
-
-.responsive-footer {
-	border-top: 1px solid black;
-	width: 100%;
-	padding-bottom: 32px;
+.responsive-header {
+	display: none;
 }
 
 .mobile-header {	
@@ -134,7 +126,8 @@ footer {
 @media only screen and (max-width: 768px) {
 
 	.responsive-header {
-		display: grid;
+		display:none;
+		/*display: grid;*/
 		grid-template-rows: 70px 1fr 95px;
 		position: absolute;
 		z-index: 99999;
@@ -143,6 +136,18 @@ footer {
 		background-color: darkred;
 		font-weight: 700;
 		text-align: center;		
+	}
+
+	.responsive-social-links {
+		width: 100%;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.responsive-footer {
+		border-top: 1px solid black;
+		width: 100%;
+		padding-bottom: 32px;
 	}
 
 	.close-mobile-nav {
