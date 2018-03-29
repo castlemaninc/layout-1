@@ -22,7 +22,6 @@ h6 { font-size: .75em; }
 	position: relative;
 }
 
-
 .sticky {
   position: fixed;
   top: 0;  
@@ -40,6 +39,10 @@ h6 { font-size: .75em; }
 	width: 100%;
 	z-index: 2;
 	display: none;
+}
+
+.mobile-logo {
+	text-align: center;
 }
 
 .open-mobile-nav {

@@ -1,17 +1,23 @@
 # Layout Practice - {Layout 1}
 
 ## Description
-- A portfolio layout reimagined using CSS Grid and Flexbox
+- For practice I re-imagined a responsive portfolio website in my own code. This is an exercise to make me a quicker web designer and Front-End Developer. 
+
+### Major differences
+1. My version utilizes CSS Grid and Flexbox
+2. 
 
 ## Technologies Used
 
-- CSS Grid, Flexbox
+- HTML5
+- CSS Grid, Flexbox, Media Queries for Responsive Layout
+- JavaScript
+- Meyerweb CSS Reset
+- Font Awesome
 
-## Code 
+## Code Example 
 
-
--------------
-
+The following code snippet shows a 3-column structure in CSS Grid in the first two lines.  
 
 ```
 .site-header {

@@ -1,5 +1,5 @@
 
-.nav, .social-links, .logo, .mobile-logo, {
+.nav, .social-links, .logo {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;			
@@ -39,7 +39,6 @@
 	align-items: center;
 	justify-content: center;
 }
-
 
 
 @media only screen and (max-width: 768px) {
