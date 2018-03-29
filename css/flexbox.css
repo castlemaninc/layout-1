@@ -1,11 +1,32 @@
 
-.nav, .social-links, .logo, .mobile-logo {
+.nav, .social-links, .logo, .mobile-logo, {
 	display: flex;
 	justify-content: space-around;
-	flex-direction: row;	
+	flex-direction: row;		
 }
 
-.close-mobile-nav {
+.responsive-nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.responsive-social-links {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.responsive-footer {
+	display: flex;
+	align-items: center;
+}
+
+
+
+
+.open-mobile-nav, .close-mobile-nav {
 	display: flex;
 	flex-direction: row-reverse;
 	align-items: center
