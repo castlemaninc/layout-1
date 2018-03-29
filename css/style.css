@@ -22,6 +22,12 @@ h6 { font-size: .75em; }
 	position: relative;
 }
 
+
+.sticky {
+  position: fixed;
+  top: 0;  
+}
+
 .responsive-header {
 	display: none;
 }
@@ -65,6 +71,7 @@ h6 { font-size: .75em; }
 	background-image: url(http://via.placeholder.com/1500x800);
 	background-position: center;
 	background-size: cover;
+	background-attachment: fixed;
 	height: 100vh;
 	text-align: center;
 	line-height: 100vh;
