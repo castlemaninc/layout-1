@@ -29,12 +29,13 @@ $( document ).ready(function() {
   });
 
   // Smooth scrolling from hero navigation link
+  // subtract header height which is 70px 
   heroNavLink.click(function(e){
 	  	console.log('hero nav link');
 	  	e.preventDefault();
 	  	$('body,html').animate({
 	  		scrollTop: $(this.hash).offset().top
-	  	}, 500);  	
+	  	- 70}, 500);  	
   }); 
 
 	// Hide and show mobile navigation when hamburger menu is clicked
