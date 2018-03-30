@@ -9,6 +9,7 @@ html {
 
 a {
 	text-decoration: none;
+	
 }
 
 h1 { font-size: 3em; }
@@ -91,6 +92,10 @@ h6 { font-size: .75em; }
 	font-weight: 700;
 }
 
+.hero-text a {
+	color: white;
+}
+
 .portfolio-wrap {	
 	max-width: 1200px;
 	margin-left: 2%;
@@ -123,6 +128,11 @@ h6 { font-size: .75em; }
 	color: gray;
 	opacity: 1;	
 }
+
+.bottom-nav a {
+	color: gray;	
+}
+
 
 
 footer {

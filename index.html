@@ -8,13 +8,15 @@
 	<link rel="stylesheet" type="text/css" href="css/flexbox.css">
 
 	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous" ></script>
+	
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" ></script>
 	<script type="text/javascript" src="js/action.js" async></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 </head>
 
 <body>
-	<div class="site-wrapper">
+	<div class="site-wrapper" id="top">
 		<div class="responsive-header">
 			<div>				
 				<div class="close-mobile-nav"><i class="fas fa-times fa-2x"></i></div>			
@@ -70,11 +72,11 @@
 				<br>
 				<h4>Scroll Down to see my work.</h4>
 				<br>
-				<div><i class="fas fa-chevron-down fa-2x"></i></div>
+				<a href="#my-work"><div><i class="fas fa-chevron-down fa-2x"></i></div></a>
 			</div>
 		</div>
 		<div class="hero"></div>		
-		<div class="portfolio-wrap">
+		<div class="portfolio-wrap" id="my-work">
 			<div class="portfolio-content">
 				<div><a href="https://placeholder.com"><img class="portfolio-image" src="http://via.placeholder.com/400x400"></a></div>
 				<div><a href="https://placeholder.com"><img class="portfolio-image" src="http://via.placeholder.com/400x400"></a></div>
@@ -88,7 +90,7 @@
 			</div>
 		</div>
 		<div class="bottom-nav">	
-			<div class="back-to-top"><a href="#"><i class="fas fa-angle-up fa-3x"></i></a></div>
+			<a href="#top"><div class="back-to-top"><i class="fas fa-angle-up fa-3x"></i></div></a>
 		</div>		
 		<footer>Footer</footer>
 	</div>	

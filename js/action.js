@@ -15,7 +15,29 @@ $( document ).ready(function() {
 
 	});
 
-	// Add smooth scrolling animation when appropriate navigation links are clicked  
+	// Add smooth scrolling animation when appropriate navigation links are clicked
+	var bottomNavLink = $('.bottom-nav a');
+	var heroNavLink = $('.hero-text a');
+  
+  // Smooth scrolling from bottom navigation link
+  bottomNavLink.click(function(e) {
+  	console.log('bottom nav link');
+    e.preventDefault();
+    $('body,html').animate({
+      scrollTop: $(this.hash).offset().top
+    }, 500 );
+  });
+
+  // Smooth scrolling from hero navigation link
+  heroNavLink.click(function(e){
+	  	console.log('hero nav link');
+	  	e.preventDefault();
+	  	$('body,html').animate({
+	  		scrollTop: $(this.hash).offset().top
+	  	}, 500);  	
+  }); 
+
+	// Hide and show mobile navigation when hamburger menu is clicked
 
     console.log( "ready!" );
 });
