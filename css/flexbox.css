@@ -23,7 +23,7 @@
 	align-items: center;	
 }
 
-.open-mobile-nav, .close-mobile-nav {
+.open-responsive-nav, .close-responsive-nav {
 	display: flex;
 	flex-direction: row-reverse;
 	align-items: center

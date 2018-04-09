@@ -39,6 +39,16 @@ $( document ).ready(function() {
   }); 
 
 	// Hide and show mobile navigation when hamburger menu is clicked
+	$('.open-responsive-nav').on('click', function(){
+		$('.responsive-header').show();
+		$('.site-wrapper').hide();
+		console.log('clicked');
+	});
+
+	$('.close-responsive-nav').on('click', function(){
+		$('.responsive-header').hide();
+		$('.site-wrapper').show();
+	})
 
     console.log( "ready!" );
 });

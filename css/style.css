@@ -19,6 +19,14 @@ h4 { font-size: 1.2em; }
 h5 { font-size: .83em; }
 h6 { font-size: .75em; }
 
+.display-responsive-nav {
+	display: grid;
+}
+
+.hide-responsive-nav {
+	display: none;
+}
+
 .site-wrapper {
 	position: relative;
 }
@@ -30,6 +38,8 @@ h6 { font-size: .75em; }
 
 .responsive-header {
 	display: none;
+	background-color: #5F4B8B;
+	color: white;
 }
 
 .mobile-header {	
@@ -46,7 +56,7 @@ h6 { font-size: .75em; }
 	text-align: center;
 }
 
-.open-mobile-nav {
+.open-responsive-nav {
 	padding-right: 20px;
 }
 
@@ -161,14 +171,13 @@ footer {
 
 @media only screen and (max-width: 768px) {
 
-	.responsive-header {
-		display:none;
-		/*display: grid;*/
+	.responsive-header {		
+		display: none;
 		grid-template-rows: 70px 1fr 95px;
 		position: absolute;
 		z-index: 99999;
 		width: 100%;
-		height: 100%;		
+		height: 100vh;		
 		background-color: #5F4B8B;
 		font-weight: 700;
 		text-align: center;		
@@ -180,13 +189,13 @@ footer {
 		padding-right: 40px;
 	}
 
-	.responsive-footer {
+	.responsive-nav-footer {
 		border-top: 1px solid black;
 		width: 100%;
 		padding-bottom: 32px;
 	}
 
-	.close-mobile-nav {
+	.close-responsive-nav {
 		padding-top: 20px;
 		padding-right: 20px;
 	}
