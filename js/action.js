@@ -4,9 +4,9 @@ $( document ).ready(function() {
 		// when user scrolls site-header and mobile-header change color
 	    if ($(this).scrollTop() > 0) {
 	        $(".site-header, .mobile-header").css('background-color', 'white');
-	        $(".site-header, .mobile-header").css('color', 'red');
+	        $(".site-header, .mobile-header").css('color', '#5F4B8B');
 	    } else {
-	    	$(".site-header, .mobile-header").css('background-color', 'red');
+	    	$(".site-header, .mobile-header").css('background-color', '#5F4B8B');
 	    	$(".site-header, .mobile-header").css('color', 'white');
 	    }
 

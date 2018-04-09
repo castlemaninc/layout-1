@@ -35,7 +35,7 @@ h6 { font-size: .75em; }
 .mobile-header {	
 	height: 70px;
 	line-height: 70px;
-	background-color: darkred;
+	background-color: #5F4B8B;
 	font-weight: 700;
 	width: 100%;
 	z-index: 2;
@@ -55,7 +55,7 @@ h6 { font-size: .75em; }
 	grid-template-columns: 1fr 1fr 1fr;
 	height: 70px;
 	line-height: 70px;	
-	background-color: red;
+	background-color: #5F4B8B;
 	font-weight: 700;
 	width: 100%;
 	z-index: 2
@@ -97,7 +97,7 @@ h6 { font-size: .75em; }
 }
 
 .scroll-down {
-	
+
 }
 
 .portfolio-wrap {	
@@ -128,9 +128,10 @@ h6 { font-size: .75em; }
 	position: fixed;			
 }
 
-.back-to-top a {
+.back-to-top svg {
 	color: gray;
-	opacity: 1;	
+	opacity: 1;
+	padding-top:10px;
 }
 
 .bottom-nav a {
@@ -168,7 +169,7 @@ footer {
 		z-index: 99999;
 		width: 100%;
 		height: 100%;		
-		background-color: darkred;
+		background-color: #5F4B8B;
 		font-weight: 700;
 		text-align: center;		
 	}
