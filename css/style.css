@@ -96,6 +96,10 @@ h6 { font-size: .75em; }
 	color: white;
 }
 
+.scroll-down {
+	
+}
+
 .portfolio-wrap {	
 	max-width: 1200px;
 	margin-left: 2%;
@@ -208,5 +212,11 @@ footer {
 
 	footer, .back-to-top {
 		display: none;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.portfolio-wrap {
+		margin: auto;
 	}
 }

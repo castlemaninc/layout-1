@@ -36,10 +36,17 @@
 
 .back-to-top {
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	align-items: center;	
 }
 
+.hero-text {
+	display: flex;
+	flex-direction: column;	
+}
+
+.hero-text .scroll-down {
+	margin-top: 20%;
+}
 
 @media only screen and (max-width: 768px) {
 	.bottom-nav, .back-to-top {

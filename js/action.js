@@ -11,7 +11,7 @@ $( document ).ready(function() {
 	    }
 
 	    // Hero text in front of the background image fades out on scroll 
-
+	    $(".hero-text").css("opacity", 1 - $(window).scrollTop() / 300);
 
 	});
 
