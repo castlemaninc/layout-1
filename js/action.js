@@ -18,6 +18,7 @@ $( document ).ready(function() {
 	// Add smooth scrolling animation when appropriate navigation links are clicked
 	var bottomNavLink = $('.bottom-nav a');
 	var heroNavLink = $('.hero-text a');
+	var workNavLink = $('.work-link');
   
   // Smooth scrolling from bottom navigation link
   bottomNavLink.click(function(e) {
@@ -36,7 +37,8 @@ $( document ).ready(function() {
 	  	$('body,html').animate({
 	  		scrollTop: $(this.hash).offset().top
 	  	- 70}, 500);  	
-  }); 
+  });
+  
 
 	// Hide and show mobile navigation when hamburger menu is clicked
 	$('.open-responsive-nav').on('click', function(){
