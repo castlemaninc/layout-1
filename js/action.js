@@ -1,15 +1,13 @@
 $( document ).ready(function() {
 
-
-
 	$(window).scroll(function() {
 		// when user scrolls site-header and mobile-header change color
 	    if ($(this).scrollTop() > 0) {
 	        $(".site-header, .mobile-header").css('background-color', 'white');
-	        $(".site-header, .mobile-header").css('color', '#5F4B8B');
+	        $(".site-header, .mobile-header, .site-header a").css('color', '#5F4B8B');
 	    } else {
 	    	$(".site-header, .mobile-header").css('background-color', '#5F4B8B');
-	    	$(".site-header, .mobile-header").css('color', 'white');
+	    	$(".site-header, .mobile-header, .site-header a").css('color', 'white');
 	    }
 
 	    // Hero text in front of the background image fades out on scroll 
