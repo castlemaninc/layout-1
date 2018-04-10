@@ -1,4 +1,8 @@
 
+.display-flex {
+	display: flex;
+}
+
 .nav, .social-links, .logo {
 	display: flex;
 	flex-direction: row;
@@ -34,11 +38,6 @@
 	flex-direction: row-reverse;
 }
 
-/*.back-to-top {
-	display: flex;
-	justify-content: center;	
-}*/
-
 .hero-text {
 	display: flex;
 	flex-direction: column;	
@@ -52,12 +51,12 @@
 	.bottom-nav, .back-to-top {
 		display: none;
 	}
-
+	
 	.responsive-header {
-		display: flex;
+		display: none;
 		flex-direction: column;
 		justify-content: space-between;
-	}
+	}	
 
 	.responsive-nav {
 		display: flex;

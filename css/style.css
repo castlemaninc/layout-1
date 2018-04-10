@@ -19,12 +19,8 @@ h4 { font-size: 1.2em; }
 h5 { font-size: .83em; }
 h6 { font-size: .75em; }
 
-.display-responsive-nav {
-	display: grid;
-}
-
-.hide-responsive-nav {
-	display: none;
+.display-flex {
+	display: flex;
 }
 
 .site-wrapper {
@@ -36,11 +32,10 @@ h6 { font-size: .75em; }
   top: 0;  
 }
 
-.responsive-header {
-	display: none;
+/*.responsive-header {	
 	background-color: #5F4B8B;
 	color: white;
-}
+}*/
 
 .mobile-header {	
 	height: 70px;
@@ -172,8 +167,6 @@ footer {
 @media only screen and (max-width: 768px) {
 
 	.responsive-header {		
-		display: none;
-		grid-template-rows: 70px 1fr 95px;
 		position: absolute;
 		z-index: 99999;
 		width: 100%;

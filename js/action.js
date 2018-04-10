@@ -1,5 +1,7 @@
 $( document ).ready(function() {
 
+
+
 	$(window).scroll(function() {
 		// when user scrolls site-header and mobile-header change color
 	    if ($(this).scrollTop() > 0) {
@@ -40,7 +42,7 @@ $( document ).ready(function() {
 
 	// Hide and show mobile navigation when hamburger menu is clicked
 	$('.open-responsive-nav').on('click', function(){
-		$('.responsive-header').show();
+		$('.responsive-header').show().css('display', 'flex');		
 		$('.site-wrapper').hide();
 		console.log('clicked');
 	});
@@ -49,6 +51,15 @@ $( document ).ready(function() {
 		$('.responsive-header').hide();
 		$('.site-wrapper').show();
 	})
+
+	// If user opens responsive nav and scale window size up, responsive-header should hide and site should show
+	$(window).resize(function(){
+        if($( window ).width() > 753) {
+        	$('.responsive-header').hide();
+  			$('.site-wrapper').show();
+        }
+    }); 
+
 
     console.log( "ready!" );
 });
